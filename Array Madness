@@ -1,0 +1,11 @@
+function arrayMadness(a, b) {
+  let x;
+  let arr1 = a.map((e) => e ** 2).reduce((f, s) => f + s);
+  let arr2 = b.map((e) => e ** 3).reduce((f, s) => f + s);
+
+  return arr1 > arr2;
+}
+console.log(arrayMadness([4, 5, 6], [1, 2, 3]));
+console.log(arrayMadness([5, 6, 7], [4, 5, 6]));
+console.log(arrayMadness([4, 5, 6], [3, 4, 5]));
+console.log(arrayMadness([1, 2, 3, 4, 5], [2, 2, 2, 2, 2, 2, 1, 1, 1]));
